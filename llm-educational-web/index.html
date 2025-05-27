@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Què és un LLM?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 0.5em;
+            text-align: center;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Què és un LLM?</h1>
+    </header>
+
+    <section>
+        <h2>Explicació bàsica</h2>
+        <p>Un LLM (Large Language Model) és un sistema d'intel·ligència artificial entrenat per comprendre i generar llenguatge humà.</p>
+        <p>Utilitzen grans quantitats de text per aprendre patrons i generar respostes coherents en diverses tasques.</p>
+
+        <h3>Casos d'ús:</h3>
+        <ul>
+            <li>Assistents virtuals</li>
+            <li>Traducció automàtica</li>
+            <li>Resum de textos</li>
+            <li>Generació de contingut</li>
+            <li>Programació assistida</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Taula comparativa de models</h2>
+        <button id="toggleTable">Mostrar/Ocultar Taula</button>
+        <table id="comparative-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Empresa</th>
+                    <th>Característiques</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GPT-4</td>
+                    <td>OpenAI</td>
+                    <td>Alt rendiment, multitasca, multimodal</td>
+                </tr>
+                <tr>
+                    <td>Claude</td>
+                    <td>Anthropic</td>
+                    <td>Ètica i seguretat com a prioritat</td>
+                </tr>
+                <tr>
+                    <td>Gemini</td>
+                    <td>Google DeepMind</td>
+                    <td>Integració amb serveis de Google</td>
+                </tr>
+                <tr>
+                    <td>LLaMA</td>
+                    <td>Meta</td>
+                    <td>Codi obert, optimitzat per investigació</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Enllaços a plataformes</h2>
+        <ul>
+            <li><a href="https://openai.com" target="_blank">OpenAI</a></li>
+            <li><a href="https://poe.com" target="_blank">Poe</a></li>
+            <li><a href="https://huggingface.co" target="_blank">Hugging Face</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Riscos ètics</h2>
+        <ul>
+            <li>Desinformació</li>
+            <li>Biaixos en les respostes</li>
+            <li>Problemes de privacitat</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Trivia o curiositats</h2>
+        <p><strong>Sabies que...</strong> Alguns LLMs poden generar codi funcional en diversos llenguatges de programació?</p>
+        <button onclick="alert('GPT-4 té més de 1 trilió de paràmetres segons estimacions!')">Fes clic per a una curiositat</button>
+    </section>
+
+    <script>
+        document.getElementById('toggleTable').addEventListener('click', function() {
+            const table = document.getElementById('comparative-table');
+            if (table.style.display === 'none') {
+                table.style.display = 'table';
+            } else {
+                table.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
