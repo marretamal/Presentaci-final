@@ -1,0 +1,25 @@
+```css
+.figma-preview-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.figma-preview-container iframe {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  pointer-events: auto;
+}
+.figma-preview-container.hidden {
+  display: none;
+}
+```

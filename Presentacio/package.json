@@ -1,0 +1,22 @@
+{
+  "name": "llm-educational-web",
+  "version": "1.0.0",
+  "description": "A web application that educates users about large language models (LLMs).",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "build": "echo 'Build step can be added here.'"
+  },
+  "keywords": [
+    "LLM",
+    "language models",
+    "education",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

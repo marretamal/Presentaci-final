@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>ParkSwap</title>
+  <link rel="icon" type="image/png" href="./src/assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ParkSwap" />
+  <link rel="manifest" href="./src/assets/favicon/site.webmanifest" />
+</head>
+<link rel="stylesheet" href="src/css/styles.css">
+<body>
+  <header class="main-header">
+    <h1>La ruta cap a ParkSwap</h1>
+    <p>Un viatge amb el grup CBS cap a una nova manera d’aparcar</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home" onclick="showHome()">Home</a></li>
+        <li><a href="#about" onclick="showAbout()">About</a></li>
+        <li><a href="#contact" onclick="showContact()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="about-section" class="hidden decorated-section">
+    <h2 class="section-title">Sobre Nosaltres</h2>
+    
+    <p>
+      <strong>Som l’equip CBS</strong> – <em>Crouch Bind Set</em>, un grup apassionat d’estudiants d’<strong>Enginyeria de Software</strong> a la 
+      <strong>Universitat Pompeu Fabra (UPF)</strong>. L’equip està format per:
+    </p>
+    <ul class="team-list">
+      <li>Arnau Gil</li>
+      <li>Hugo Sanz</li>
+      <li>Matias Molina</li>
+      <li>Mar Retamal</li>
+      <li>Arnau Balart</li>
+      <li>Nathan Garcia</li>
+    </ul>
+  
+    <p>
+      Durant l’assignatura, ens hem proposat el repte de dissenyar el <strong>MVP d’una aplicació mòbil</strong> sobre aparcaments urbans.
+    </p>
+  
+    <h3 class="highlight-title">La nostra proposta: <span class="highlight">ParkSwap</span></h3>
+    <p>
+      <strong>ParkSwap</strong> és una app intel·ligent que permet als usuaris compartir i reservar places d’aparcament al carrer amb facilitat.
+    </p>
+  
+    <div class="features-grid">
+      <div class="feature-box">
+        <h4>Reserva intel·ligent</h4>
+        <p>Veure i reservar places properes que s’alliberaran aviat.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Rotació eficient</h4>
+        <p>Indica quan deixes la plaça perquè altres l’aprofitin.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Mapa interactiu</h4>
+        <p>Visualitza les places disponibles i temps d'espera en temps real.</p>
+      </div>
+    </div>
+  
+    <div class="section-divider"></div>
+  
+    <h4 class="subsection-title">La nostra visió</h4>
+    <p class="decorated-paragraph">
+      Creiem que la tecnologia pot resoldre problemes quotidians com buscar aparcament. Amb ParkSwap volem transformar la mobilitat urbana,
+      fent-la més eficient, sostenible i col·laborativa.
+    </p>
+  
+    <h4 class="subsection-title">El nostre procés</h4>
+    <p class="decorated-paragraph">
+      Hem aplicat metodologies àgils com <strong>Kanban</strong>, <strong>criteris d’acceptació</strong> i eines de disseny com el 
+      <em>journey map</em> i el <em>user story mapping</em> per construir el producte amb una visió clara i validada.
+    </p>
+  
+    <h4 class="subsection-title">Mirant al futur</h4>
+    <p class="decorated-paragraph">
+      ParkSwap és només el començament: volem escalar a més ciutats, incorporar pagament integrat, notificacions intel·ligents i
+      prediccions de disponibilitat basades en IA.
+    </p>
+  
+    <div class="section-divider"></div>
+  
+    <p class="closing-paragraph">
+      Gràcies per acompanyar-nos en aquest viatge. Esperem que ParkSwap et faci la vida més fàcil… o com a mínim, et faci aparcar sense enfadar-te!
+    </p>
+  </section>
+  
+  
+  <section id="contact-section" class="contact-section hidden">
+    <h2 class="section-title">Contacta amb Nosaltres</h2>
+    <p class="contact-intro">
+      Tens alguna pregunta? 
+      Omple el formulari i et respondrem tan aviat com puguem 🚗💨
+    </p>
+  
+    <form class="contact-form" action="mailto:parkswap@upf.edu" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required placeholder="El teu nom">
+      </div>
+      <div class="form-group">
+        <label for="email">Correu electrònic</label>
+        <input type="email" id="email" name="email" required placeholder="exemple@correu.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Missatge</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Explica’ns el que vulguis..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Envia Missatge</button>
+    </form>
+  
+    <p class="contact-closing">
+      També pots trobar-nos als passadissos de la UPF... 
+    </p>
+  </section>
+  
+
+
+  <script src="src/js/script.js"></script>
+  
+  <section>
+    <div class="slider">
+      <img id="localization1" src="src/assets/images/localization.png" alt="Localization 1" class="fixed-image">
+      <div class="vertical-line1"></div>
+      <img id="legocity-image" src="src/assets/images/legocity.png" alt="Lego City Image" class="hidden">
+      
+      <img id="sprint0-sign" src="src/assets/images/spring0.png" alt="Above Image" class="fixed-image">
+  
+      <img id="localization2" src="src/assets/images/localization.png" alt="Localization 2"class="fixed-image">
+      <div class="vertical-line2"></div>
+      <img id="canvas" src="src/assets/images/canvas.png" alt="Canvas Image" class="hidden">
+      <div style="height: 40px;"></div> <!-- Espacio extra debajo de la imagen -->
+<div id="canva-iframe-wrapper" class="hidden" style="margin-top: 40px;">
+  <iframe id="canva-preview-inslider" width="800" height="450" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; background: #fff;" allowfullscreen
+    src="https://www.canva.com/design/DAGkEWpJ50g/1_6G1Bm4ypX0rOD1bbwGWQ/view?embed">
+  </iframe>
+</div>
+<div id="figma-iframe-wrapper" class="hidden" style="margin-top: 40px;">
+  <iframe id="figma-preview-inslider" width="800" height="450" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; background: #fff;" allowfullscreen
+    src="https://embed.figma.com/proto/juetK16YWlpKwgDS3B51Am/ParkSwap?node-id=62-119&p=f&scaling=scale-down&content-scaling=fixed&page-id=62%3A18&starting-point-node-id=62%3A119&embed-host=share">
+  </iframe>
+</div>
+  
+      <img id="localization3" src="src/assets/images/localization.png" alt="Localization 3" class="fixed-image">
+      <div class="vertical-line3"></div>
+  
+      <img id="pas2" src="src/assets/images/pas2.png" alt="Pas 2">
+      <img id="pas2_1" src="src/assets/images/pas2.1.png" alt="Pas 2_1">
+      <img id="pas2_2" src="src/assets/images/pas2.2.png" alt="Pas 2_2">
+  
+      <img id="localization4" src="src/assets/images/localization.png" alt="Localization 4" class="fixed-image">
+      <div class="vertical-line4"></div>
+      <img id="kanban" src="src/assets/images/kanban.png" alt="Kanban Image">
+
+      <img id="sprint1-sign" src="src/assets/images/spring1.png" alt="Below Image" class="fixed-image">
+      <img id="localization5" src="src/assets/images/localization.png" alt="Localization 5" class="fixed-image">
+      <div class="vertical-line5"></div>
+      <img id="review1" src="src/assets/images/review1.png" alt="Review Image">
+
+      <img id="localization6" src="src/assets/images/localization.png" alt="Localization 6" class="fixed-image">
+      <div class="vertical-line6"></div>
+      <img id="journeymap" src="src/assets/images/journeymap.png" alt="Journey Map Image">
+
+      <img id="localization7" src="src/assets/images/localization.png" alt="Localization 7" class="fixed-image">
+      <div class="vertical-line7"></div>
+      <img id="userstorymap" src="src/assets/images/userstorymap.png" alt="User Story Map Image">
+      
+      <img id="localization8" src="src/assets/images/localization.png" alt="Localization 8" class="fixed-image">
+      <div class="vertical-line8"></div>
+      <img id="criterisacc1" src="src/assets/images/criterisacc1.png" alt="Criteris d'Acceptació 1 Image">
+      <img id="criterisacc2" src="src/assets/images/criterisacc2.png" alt="Criteris d'Acceptació 2 Image">
+
+      <img id="sprint2-sign" src="src/assets/images/spring2.png" alt="Below Image" class="fixed-image">
+      <img id="localization9" src="src/assets/images/localization.png" alt="Localization 9" class="fixed-image">
+      <div class="vertical-line9"></div>
+      <img id="review2" src="src/assets/images/review2.png" alt="Review 2 Image">
+
+      <img id="localization10" src="src/assets/images/localization.png" alt="Localization 10" class="fixed-image">
+      <div class="vertical-line10"></div>
+      <img id="webllm1" src="src/assets/images/webllm1.png" alt="Web LLM 1 Image">
+      <img id="webllm2" src="src/assets/images/webllm2.png" alt="Web LLM 2 Image">
+      <img id="webllm3" src="src/assets/images/webllm3.png" alt="Web LLM 3 Image">
+      <img id="localization11" src="src/assets/images/localization.png" alt="Localization 11" class="fixed-image">
+      <img id="localization12" src="src/assets/images/localization.png" alt="Localization 12" class="fixed-image">
+      <div class="vertical-line12"></div>
+      <img id="webbiblio1" src="src/assets/images/webbiblio1.png" alt="Web Bibliography 1 Image">
+      <img id="webbiblio2" src="src/assets/images/webbiblio2.png" alt="Web Bibliography 2 Image">
+      <img id="webbiblio3" src="src/assets/images/webbiblio3.png" alt="Web Bibliography 3 Image">
+
+      <img id="localization13" src="src/assets/images/localization.png" alt="Localization 13" class="fixed-image">
+      <img id="sprint3-sign" src="src/assets/images/spring3.png" alt="Below Image" class="fixed-image">
+      <img id="sprint4-sign" src="src/assets/images/spring4.png" alt="Below Image" class="fixed-image">
+      <div id="mvp-message">MVP ParkSwap</div>
+      <img id="beach" src="src/assets/images/beach.png" alt="Beach Image" class="fixed-image">
+      <div class="slider-thumb"></div>
+    </div>
+  </section>
+
+  <!-- Previews integrats en el flux de la pàgina -->
+  <div class="figma-preview-container hidden" id="figma-preview-container">
+    <iframe id="figma-preview" width="800" height="450" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; background: #fff;" allowfullscreen
+      src="https://embed.figma.com/proto/juetK16YWlpKwgDS3B51Am/ParkSwap?node-id=62-119&p=f&scaling=scale-down&content-scaling=fixed&page-id=62%3A18&starting-point-node-id=62%3A119&embed-host=share">
+    </iframe>
+  </div>
+
+  <div class="canva-preview-container hidden" id="canva-preview-container">
+    <iframe id="canva-preview" width="800" height="450" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; background: #fff;" allowfullscreen
+      src="https://www.canva.com/design/DAGkEWpJ50g/1_6G1Bm4ypX0rOD1bbwGWQ/view?embed">
+    </iframe>
+  </div>
+
+
+  <video id="end-video">
+    <source src="src/assets/videos/video_summer.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video></video>
+  <script>
+    const slider = document.querySelector('.slider');
+    const thumb = document.querySelector('.slider-thumb');
+    const video = document.getElementById('end-video');
+  
+    const steps = [
+      { el: document.getElementById('legocity-image'), at: 4 },
+      { el: document.querySelector('.vertical-line1'), at: 4 },
+      { el: document.getElementById('canvas'), at: 12 },
+      { el: document.querySelector('.vertical-line2'), at: 12 },
+      { el: document.querySelector('.vertical-line3'), at: 14 },
+      { el: document.getElementById('pas2'), at: 14 },
+      { el: document.getElementById('pas2_1'), at: 14 },
+      { el: document.getElementById('pas2_2'), at: 14 },
+      { el: document.getElementById('kanban'), at: 18 },
+      { el: document.querySelector('.vertical-line4'), at: 18 },
+      { el: document.getElementById('review1'), at: 27 },
+      { el: document.querySelector('.vertical-line5'), at: 27 },
+      { el: document.getElementById('journeymap'), at: 36 },
+      { el: document.querySelector('.vertical-line6'), at: 36 },
+      { el: document.getElementById('userstorymap'), at: 40 },
+      { el: document.querySelector('.vertical-line7'), at: 40 },
+      { el: document.getElementById('criterisacc1'), at: 44 },
+      { el: document.getElementById('criterisacc2'), at: 44 },
+      { el: document.querySelector('.vertical-line8'), at: 44 },
+      { el: document.getElementById('review2'), at: 46 },
+      { el: document.querySelector('.vertical-line9'), at: 46 },
+      { el: document.getElementById('webllm1'), at: 51 },
+      { el: document.getElementById('webllm2'), at: 51 },
+      { el: document.getElementById('webllm3'), at: 51 },
+      { el: document.querySelector('.vertical-line10'), at: 51 },
+      { el: document.getElementById('figma-preview-container'), at: 54 },
+      { el: document.getElementById('webbiblio1'), at: 57 },
+      { el: document.getElementById('webbiblio2'), at: 57 },
+      { el: document.getElementById('webbiblio3'), at: 57 },
+      { el: document.querySelector('.vertical-line12'), at: 57 },
+    ];
+  
+    let videoPlayed = false;
+  
+    thumb.addEventListener('mousedown', (event) => {
+      event.preventDefault();
+      // Evitar selección de texto mentre es llisca el cotxe
+      document.body.style.userSelect = 'none';
+      const sliderRect = slider.getBoundingClientRect();
+  
+      const onMouseMove = (e) => {
+  let newLeft = e.clientX - sliderRect.left;
+  newLeft = Math.max(0, Math.min(newLeft, sliderRect.width));
+  thumb.style.left = `${newLeft}px`;
+
+  const percent = (newLeft / sliderRect.width) * 100;
+  const threshold = 1;
+
+  steps.forEach(step => {
+    if (!step.el.classList.contains('fixed-image')) {
+      if (Math.abs(percent - step.at) <= threshold) {
+        step.el.classList.add('visible');
+      } else {
+        step.el.classList.remove('visible');
+      }
+    }
+  });
+
+  // Mostrar el missatge MVP al 70%
+  const mvpMessage = document.getElementById('mvp-message');
+  if (percent >= 75 && percent <= 80) {
+    mvpMessage.style.display = 'block';
+  } else {
+    mvpMessage.style.display = 'none';
+  }
+
+  // Reproducció de vídeo
+  if (percent >= 99 && !videoPlayed) {
+    video.style.display = 'block';
+    video.play();
+    videoPlayed = true;
+  } else if (percent < 99 && videoPlayed) {
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = 'none';
+    videoPlayed = false;
+  }
+
+  // Mostrar/ocultar Figma preview en el slider (solo en el punt 54)
+  const figmaIframeWrapper = document.getElementById('figma-iframe-wrapper');
+  if (Math.abs(percent - 54) <= threshold) {
+    figmaIframeWrapper.classList.add('visible');
+  } else {
+    figmaIframeWrapper.classList.remove('visible');
+  }
+
+
+  // Mostrar/ocultar Canva preview en el slider (solo en el punt 12)
+  const canvaIframeWrapper = document.getElementById('canva-iframe-wrapper');
+  if (Math.abs(percent - 12) <= threshold) {
+    canvaIframeWrapper.classList.add('visible');
+  } else {
+    canvaIframeWrapper.classList.remove('visible');
+  }
+  };
+
+      document.addEventListener('mousemove', onMouseMove);
+      const onMouseUp = () => {
+        document.removeEventListener('mousemove', onMouseMove);
+        // Restaurar selección de texto
+        document.body.style.userSelect = '';
+      };
+      document.addEventListener('mouseup', onMouseUp, { once: true });
+    });
+  
+    // ...existing code...
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
